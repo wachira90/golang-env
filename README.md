@@ -55,10 +55,25 @@ func main() {
 
 ## Run the below command to check.
 
+linux
+
 ```sh
 APP_ENV=prod go run main.go
 
 // Output
+os package: name = gopher
+environment = prod
+```
+
+windows 
+
+```bat
+SETX APP_ENV prod
+
+D:\golang-env>echo %APP_ENV%
+prod
+
+D:\golang-env>go run main.go
 os package: name = gopher
 environment = prod
 ```
